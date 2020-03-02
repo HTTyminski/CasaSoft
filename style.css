@@ -633,7 +633,15 @@ a.article:hover {
     .hidden-mobile{
         display: none;
     }
-
+    .head-tarefa {
+        padding-left: 14%;
+    }
+    .head-msgs{
+        padding-left: 14%;
+    }
+    .head-user{
+        padding-left: 14%;
+    }
     
     #sidebar {
         min-width: 80px;
