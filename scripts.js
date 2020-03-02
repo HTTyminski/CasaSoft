@@ -66,3 +66,50 @@ function mostra(id) {
         });
     }, false);
 })();
+
+
+
+
+
+fetch('https://my-json-server.typicode.com/HTTyminski/CasaSoft/users')
+    .then((response) => {
+        return response.json();
+    })
+    // .then(function (data) {
+    //     console.log(data);
+    // })
+
+    .then((users) => {
+        document.getElementById("nome").innerHTML = users.nome,
+            document.getElementById("email").innerHTML = users.email,
+            document.getElementById("telefone").innerHTML = users.telefone
+
+        // var usuarios = users.nome;
+        // if (genero != "female") {
+        //     document.getElementById("fotoperfil").src = "assets/images/assets_png/menino.png";
+        //     document.getElementById("bemvindo").innerHTML = "Bem vindo de volta";
+        // } else if (genero != "male") {
+        //     document.getElementById("fotoperfil").src = "assets/images/assets_png/menina.png";
+        //     document.getElementById("bemvindo").innerHTML = "Bem vinda de volta";
+        // }
+        // console.log(usuarios);
+
+    });
+
+var campos = [
+    document.querySelector('#form-nome'),
+    // document.querySelector('#form-acesso'),
+    document.querySelector('#form-telefone'),
+    document.querySelector('#form-email')
+
+];
+console.log(campos);
+document.querySelector('.form').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    campos.forEach(function (campo) {
+
+
+    });
+
+});
