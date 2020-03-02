@@ -1,0 +1,54 @@
+{
+    "estado": [
+        {
+            "id": 1,
+            "a": "Ativo"
+        },
+        {
+            "id": 2,
+            "b": "Desativado"
+        }
+    ],
+    "acesso": [
+        {
+            "id": 1,
+            "conta": "Administrador"
+        },
+        {
+            "id": 2,
+            "conta": "Usuário"
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "nome": "Marcela da Silva",
+            "email": "email@email.com.br",
+            "telefone": "(DDD) 3333 3333"
+        },
+        {
+            "id": 2,
+            "nome": "José Luiz Felipe",
+            "email": "email@email.com.br",
+            "telefone": "(DDD) 3333 3333"
+        },
+        {
+            "id": 3,
+            "nome": "Paulo Rogério",
+            "email": "email@email.com.br",
+            "telefone": "(DDD) 3333 3333"
+        },
+        {
+            "id": 4,
+            "nome": "Felipe da Cunha",
+            "email": "email@email.com.br",
+            "telefone": "(DDD) 3333 3333"
+        },
+        {
+            "id": 5,
+            "nome": "Luiza Cardoso Pereira",
+            "email": "email@email.com.br",
+            "telefone": "(DDD) 3333 3333"
+        }
+    ]
+}
