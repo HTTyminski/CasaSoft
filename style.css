@@ -457,6 +457,7 @@ a.article:hover {
     background-position-y: 50%;
 }
 .btn-aprv{
+    margin-bottom: 5px;
     min-width: 170px;
     font-size: 14px;
     font-weight: 600;
@@ -471,6 +472,7 @@ a.article:hover {
     background-position-y: 50%;
 }
 .btn-denied{
+    margin-bottom: 5px;
     min-width: 170px;
     font-size: 14px;
     font-weight: 600;
@@ -485,6 +487,7 @@ a.article:hover {
     background-position-y: 50%;
 }
 .btn-esper{
+    margin-bottom: 5px;
     font-size: 14px;
     font-weight: 600;
     min-width: 170px;
@@ -499,6 +502,7 @@ a.article:hover {
     background-position-y: 50%;
 }
 .btn-progs{
+    margin-bottom: 5px;
     font-size: 14px;
     font-weight: 600;
     min-width: 170px;
@@ -626,6 +630,11 @@ a.article:hover {
 ----------------------------------------------------- */
 
 @media (max-width: 768px) {
+    .hidden-mobile{
+        display: none;
+    }
+
+    
     #sidebar {
         min-width: 80px;
         max-width: 80px;
