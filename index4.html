@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="style4.css">
+    <script src="https://kit.fontawesome.com/503439b6cc.js"></script>
+    <link rel="stylesheet" href="dist/css/checkboxes.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+
+        <button id="sidebarCollapse" type="button" class="btn btn-link"><i class="fas fa-bars"></i></button>
+
+        <div class="nav-item dropdown itens-nav">
+
+            <button class="img-bell"></button>
+            <a href=""><img src="img/perfil.png" class="img-perfil" alt=""></a>
+
+
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <p style="font-weight: 600;">Olá,<span>José</span>
+                    <p>
+                        <img src="img/arrow-down-sign-to-navigate.png" alt="">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a href="#" class="seta-cima"></a>
+                <button type="button" class="btn btn-secondary item-btn-dsb btnradius2drop" disabled></button>
+                <div>
+                    <a class="dropdown-item jose" href="#">José da Silva</a>
+                    <a class="dropdown-item" href="#">Editar dados</a>
+                    <!-- <div class="dropdown-divider"></div> -->
+                    <a class="dropdown-item" href="#">Sair</a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="sidebar">
+            <ul class="list-unstyled components">
+                <li data-li="home" class="active">
+                    <a href="#"><img style="width:24px ;height: 19px;" src="img/home-button.png" alt="">
+                        <h3>Meu painel</h3>
+                    </a>
+                </li>
+                <li data-li="tarefas">
+                    <a href="#"><img style="width:21px;height:21px" src="img/clipboard.png" alt="">
+                        <h3>Minhas tarefas</h3>
+                    </a>
+                </li>
+                <li data-li="mensagens">
+                    <a href="#"><img style="width:27px;height:20px;" src="img/envelope (4).png" alt="">
+                        <h3>Mensagens</h3>
+                    </a>
+                </li>
+                <li data-li="usuarios">
+                    <a href="#"><img style="width:22.66px;height:22.66px;" src="img/user (2).png" alt="">
+                        <h3>Usuários</h3>
+                    </a>
+                </li>
+                <li data-li="contato">
+                    <a href="#"><img style="width:23.66px;height:23.67px;" src="img/chat (1).png" alt="">
+                        <h3>Contato</h3>
+                    </a>
+                </li>
+                <li data-li="cadastro">
+                    <a href="#"><img style="width:23.66px;height:23.67px;" src="img/chat (1).png" alt="">
+                        <h3>Cadastro</h3>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div id="content">
+            <div class="item home">
+                <div class="row pl-3 pr-3 mb-4">
+                    <div class="col-12 linha">
+                        <div class="bem-vindo">
+                            <div class="card-home">
+                                <p style="font-size: 20px;font-weight:800;color: #0062A4;">Olá,<span
+                                        style="font-size: 20px;font-weight:800;margin-left: 5px;color: #0062A4;">
+                                        José</span>.</p>
+                                <p style="font-size: 20px;margin-left: 5px;color: #0062A4;">Bem vindo ao seu
+                                    painel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- cards -->
+                <div class="row">
+                    <div id="tarefa" class="col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4">
+                        <div class="card">
+                            <div class="card-header head-tarefa">
+                                <a href="#"></i>Minhas tarefas</a>
+                            </div>
+                            <div class="card-body">
+                                <button type="button" class="btn btn-outline-secondary btn-aprv" disabled>15
+                                    aprovadas</button>
+                                <button type="button" class="btn btn-outline-secondary btn-esper" disabled>20
+                                    progresso</button>
+                                <button type="button" class="btn btn-outline-secondary btn-progs" disabled>10
+                                    esperando</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="msg" class="col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4">
+                        <div class="card">
+                            <div class="card-header head-msgs">
+                                <a href="#"></i>Minhas Mensagens</a>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-around">
+                                    <div>
+                                        <p>Você possui <strong>15 mensagens novas</strong></p>
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-msg">Ver mensagens</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="user" class="col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4">
+                        <div class="card">
+                            <div class="card-header head-user">
+                                <a href="#"></i>Usuários</a>
+                            </div>
+                            <div class="card-body ">
+                                <button type="button" class="btn btn-outline-secondary btn-aprv" disabled>10
+                                    ativos</button>
+                                <button type="button" class="btn btn-outline-secondary btn-denied" disabled>5
+                                    inativos</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4">
+                        <div class="card card-cinsa">
+                            <div class="card-body borda-card">
+                                <div class="d-flex justify-content-center">
+                                    <input type="button" value="Mostrar/Ocultar" onclick="mostra">
+                                    <a class="d-flex" style="padding: 2%;" href="#">
+                                        <img style="height: 20px;width: 20px;" src="img/add-plus-button (1).png" alt="">
+                                        <p style="line-height: 1.4em;margin-left: 5px;white-space: nowrap;">Adicionar
+                                            atalho
+                                        </p>
+                                    </a>
+                                    </input>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item usuarios">
+                <div class="row pl-3 pr-3 mb-3">
+                    <div class="col-12 linha">
+                        <div class="bem-vindo">
+                            <div class="card-text img-user">
+                                <p style="font-size: 20px;font-weight:800;color: #0062A4;">Usuários</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pl-3 pr-3 mb-3 justify-content-between">
+                    <p>Aqui você pode adicionar, excluir ou gerenciar seu usuários:</p>
+                    <a data-li="cadastro" href="#" class="btn btn-primary btn-msg"><img class="img-cruz"
+                            src="img/add-plus-button3.png" alt="">Novo usuário</a>
+                </div>
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <div class="row" style="padding-bottom: 4%;">
+                            <div class="col-lg-8"></div>
+                            <div class="col-lg-2">Status:</div>
+                            <div class="col-lg-2" style="padding-left: 4%;">Ações:</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-8 d-flex">
+                                <div class="col-lg-2">
+                                    <a href=""><img src="img/Grupo de máscara 23.png" class="img-perfil2" alt=""></a>
+                                </div>
+                                <div class="col-lg-6 perfil-log">
+                                    <div>
+                                        <a class="nome" href="#">José da Silva</a>
+                                    </div>
+                                    <div>
+                                        <a class="job" href="#">administrador</a>
+                                    </div>
+                                    <div>
+                                        <a class="phone" href="#">
+                                            <i class="fas fa-phone-alt"></i>
+                                            <span style="padding-left: 5px;">41 3333 3333</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a class="email" href="#">
+                                            <i class="far fa-envelope"></i>
+                                            <span style="padding-left: 5px;">email@email.com.br</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2" style="padding-top:1%;">
+                                <div class="ckbx-style-8">
+                                    <input type="checkbox" id="ckbx-style-8-1" value="0" name="ckbx-style-8">
+                                    <label for="ckbx-style-8-1"></label>
+                                </div>
+                                <p>Desativado</p>
+                            </div>
+                            <div class="col-lg-2 d-flex">
+                                <div>
+                                    <button type="button" class="btn btn-light btn-edit"></button>
+                                    <p>Editar</p>
+                                </div>
+                                <div style="margin-left: 20%;">
+                                    <button type="button" class="btn btn-light btn-exc"></button>
+                                    <p>Excluir</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item cadastro">
+                <div class="row pl-3 pr-3 mb-4">
+                    <div class="col-12 linha">
+                        <div class="bem-vindo">
+                            <a class="img-voltar" href="#">
+                                <img src="img/Grupo 310.png" alt="">
+                            </a>
+                            <div class="card-text img-user">
+
+                                <p style="font-size: 20px;font-weight:800;color: #0062A4;">Edição de usuários</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pl-3 pr-3 mb-4 justify-content-between">
+                    <p>Aqui você pode adicionar, excluir ou gerenciar seus usuários:</p>
+
+                </div>
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+
+
+                        <div class="row">
+
+                            <div class="col-lg-2">
+                                <a href=""><img src="img/Grupo de máscara 23.png" class="img-perfil2" alt=""></a>
+                            </div>
+
+                            <div class="col-lg-8">
+                                <form class="needs-validation" novalidate>
+
+                                    <div class="form-row">
+                                        <div class="col-md-6 mb-2">
+                                            <label for="inputNome">
+                                                <p style="font-weight: 600;">Nome:</p>
+                                            </label>
+                                            <input type="text" class="form-control" id="inputNome"
+                                                placeholder="Ana Maria" value="Mark" required>
+                                            <div class="valid-feedback">Looks good!</div>
+                                            <div class="invalid-feedback">Please provide a valid.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="col-md-6 mb-2">
+                                            <label for="inputEmail">
+                                                <p style="font-weight: 600;">E-mail:</p>
+                                            </label>
+                                            <input type="email" class="form-control" id="inputEmail"
+                                                placeholder="email@email.com.br">
+                                            <div class="valid-feedback">Looks good!</div>
+                                            <div class="invalid-feedback">Please provide a valid.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="col-md-4 mb-2">
+                                            <label for="inputPhone">
+                                                <p style="font-weight: 600;">Telefone:</p>
+                                            </label>
+                                            <input type="phone" class="form-control" id="inputPhone"
+                                                placeholder="(DDD) 3333 3333">
+                                            <div class="valid-feedback">Looks good!</div>
+                                            <div class="invalid-feedback">Please provide a valid.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="col-md-4 mb-3">
+                                            <label class="my-1 mr-3" for="customSelect">
+                                                <p style="font-weight: 600;">Nível de Acesso:</p>
+                                            </label>
+                                            <select class="custom-select my-1 mr-sm-2" id="customSelect">
+                                                <option selected>Usuário</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-row">
+                                        <div class="col-lg-2 mb-2" style="padding-top: 10px;
+                                        padding-left: 5%;">
+                                            <div class="ckbx-style-8">
+                                                <input type="checkbox" id="ckbx-style-8-1" value="0"
+                                                    name="ckbx-style-8">
+                                                <label for="ckbx-style-8-1"></label>
+                                            </div>
+                                            <p>Desativado</p>
+                                        </div>
+                                        <div class="col-lg-2 d-flex">
+
+                                            <div style="margin-left: 20%;">
+                                                <button type="button" class="btn btn-light btn-exc"></button>
+                                                <p>Excluir</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-row">
+                                        <div class="col-md-4 mb-4">
+                                            <button class="btn btn-primary btn-salvar" type="submit">Salvar</button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+    </div>
+
+
+
+
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
